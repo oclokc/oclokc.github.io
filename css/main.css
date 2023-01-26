@@ -1,0 +1,42 @@
+h1, h2 {
+  letter-spacing: 0.1em;  
+}
+
+h3 {
+  letter-spacing: 0.2em;  
+}
+
+.recept ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.recept ul li figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+  position: relative;
+}
+
+.recept ul li figure a img {
+    width: 100%;
+}
+  
+
+.recept ul li figure a figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(53, 44, 17, .7);
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.recept ul li figure a figcaption h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
